@@ -1,0 +1,47 @@
+﻿#container {
+    width: 500px;
+    height: 500px;
+    background-color: rgba(228, 148, 168, 0.2);
+    margin: 50px auto;
+    border: 10px rgba(228, 148, 168, 0.2) solid;
+    border-radius: 5px;
+    position: relative;
+}
+.slide {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 1px 1px red, 0 0 1px 1px red inset;
+    background-color: white;
+    display: none;
+    left: 0px;
+    right: 0px;
+    -webkit-transition: all 0.5s;
+    /*line-height: 200px;
+    font-size: 100px;*/
+    text-align: center;
+    opacity: 0;
+}
+
+.current,
+.next,
+.prev {
+    display: block;
+}
+.test .next,
+.test .prev {
+    opacity: 0.5;
+}
+.next {
+    z-index: 3;
+}
+.prev {
+    z-index: 1;
+}
+.current {
+    opacity: 1;
+    z-index: 2;
+}
+.active {
+    color: black;
+}
